@@ -14,7 +14,6 @@ The file provides a step by step walkthrough of the entire machine learning proc
  7. perform five fold cross validation on the training set to better understand model's predictive capabilities 
  8. evaluate model's actual accuracy on the test set
 <br>
-
 ### Packages:
 - `dplyr`: data tidying and feature manipulation 
 - `ggplot`: data visualizations and graphs 
