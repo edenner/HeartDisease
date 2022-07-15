@@ -181,15 +181,7 @@ exang.plot <- ggplot(cleveland, mapping = aes(x = exercise_angina, fill = heart_
 bplots <- grid.arrange(sex.plot, fbs.plot, exang.plot, nrow=2)
 ```
 
-![](bplots-1.png)
-
-
-
-    TableGrob (2 x 2) "arrange": 3 grobs
-      z     cells    name           grob
-    1 1 (1-1,1-1) arrange gtable[layout]
-    2 2 (1-1,2-2) arrange gtable[layout]
-    3 3 (2-2,1-1) arrange gtable[layout]
+![](bp-plots-1.png)
 
 The bar plot on the top left shows a higher proportion of males with
 heart disease than females with heart disease, suggesting that there is
@@ -223,18 +215,7 @@ maxhr.plot <- ggplot(cleveland, mapping = aes(x = max_hr, y = heart_disease)) +
 
 bxplots <- grid.arrange(trestbps.plot, chol.plot, maxhr.plot, nrow=2)
 ```
-
-![](heartdisease_files/figure-gfm/bxplots-1.png)
-
-``` r
-bxplots
-```
-
-    TableGrob (2 x 2) "arrange": 3 grobs
-      z     cells    name           grob
-    1 1 (1-1,1-1) arrange gtable[layout]
-    2 2 (1-1,2-2) arrange gtable[layout]
-    3 3 (2-2,1-1) arrange gtable[layout]
+![](bxplots-1.png)
 
 The box plots for resting blood pressure (top left) appear similar for
 the presence and absence of heart disease; the boxes (middle 50% of
@@ -431,19 +412,7 @@ heart.roc <- roc(response = ordered(traincomp$train.response),
 
 rocplot <- plot(heart.roc, print.thres = "best", main = "Receiver Operating Characteritic Technique Plot")
 ```
-
-![](heartdisease_files/figure-gfm/rocplot-1.png)
-
-``` r
-rocplot
-```
-
-
-    Call:
-    roc.default(response = ordered(traincomp$train.response), predictor = ordered(traincomp$train.prediction))
-
-    Data: ordered(traincomp$train.prediction) in 119 controls (ordered(traincomp$train.response) 0) < 109 cases (ordered(traincomp$train.response) 1).
-    Area under the curve: 0.784
+![](rocplot-1.png)
 
 ``` r
 print(auc(heart.roc))
