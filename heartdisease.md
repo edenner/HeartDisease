@@ -130,7 +130,7 @@ age.plot <- ggplot(cleveland, mapping = aes(x = age, fill = heart_disease)) +
 age.plot
 ```
 
-![](heartdisease_files/figure-gfm/age-plot-1.png)
+![](age-plot.png)
 
 The histograms for age faceted on the presence and absence of heart
 disease have different distribution shapes, suggesting that age does
