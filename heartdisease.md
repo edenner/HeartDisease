@@ -147,8 +147,7 @@ cp.plot <- ggplot(cleveland, mapping = aes(x=heart_disease, fill = cp)) +
        x = "Heart Disease", y = "Count", fill = "Chest Pain Type")
 cp.plot
 ```
-
-![](heartdisease_files/figure-gfm/cp-plot-1.png)
+![](cp-plot-1.png)
 
 There does appear to be a relationship between type of chest pain and
 heart disease. Interestingly, asymptomatic chest pain type has the
@@ -182,11 +181,9 @@ exang.plot <- ggplot(cleveland, mapping = aes(x = exercise_angina, fill = heart_
 bplots <- grid.arrange(sex.plot, fbs.plot, exang.plot, nrow=2)
 ```
 
-![](heartdisease_files/figure-gfm/bp-plots-1.png)
+![](bplots-1.png)
 
-``` r
-bplots
-```
+
 
     TableGrob (2 x 2) "arrange": 3 grobs
       z     cells    name           grob
