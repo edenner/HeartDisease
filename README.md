@@ -12,8 +12,8 @@ The file provides a step by step walkthrough of the entire machine learning proc
  5. interpretation of model estimates and statistics
  6. determination of optimal threshold for classification that maximizes sensitivity (true positive rate) and specificity (true negative rate) 
  7. perform five fold cross validation on the training set to better understand model's predictive capabilities 
- 8. evaluate model's actual accuracy on the test set <br>
-<br>
+ 8. evaluate model's actual accuracy on the test set
+
 ### Packages:
 - `dplyr`: data tidying and feature manipulation 
 - `ggplot`: data visualizations and graphs 
