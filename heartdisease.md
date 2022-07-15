@@ -130,7 +130,7 @@ age.plot <- ggplot(cleveland, mapping = aes(x = age, fill = heart_disease)) +
 age.plot
 ```
 
-![](heartdisease_files/figure-gfm/age-plot-1.png)<!-- -->
+![](heartdisease_files/figure-gfm/age-plot-1.png)
 
 The histograms for age faceted on the presence and absence of heart
 disease have different distribution shapes, suggesting that age does
@@ -148,7 +148,7 @@ cp.plot <- ggplot(cleveland, mapping = aes(x=heart_disease, fill = cp)) +
 cp.plot
 ```
 
-![](heartdisease_files/figure-gfm/cp-plot-1.png)<!-- -->
+![](heartdisease_files/figure-gfm/cp-plot-1.png)
 
 There does appear to be a relationship between type of chest pain and
 heart disease. Interestingly, asymptomatic chest pain type has the
@@ -182,7 +182,7 @@ exang.plot <- ggplot(cleveland, mapping = aes(x = exercise_angina, fill = heart_
 bplots <- grid.arrange(sex.plot, fbs.plot, exang.plot, nrow=2)
 ```
 
-![](heartdisease_files/figure-gfm/bp-plots-1.png)<!-- -->
+![](heartdisease_files/figure-gfm/bp-plots-1.png)
 
 ``` r
 bplots
@@ -227,7 +227,7 @@ maxhr.plot <- ggplot(cleveland, mapping = aes(x = max_hr, y = heart_disease)) +
 bxplots <- grid.arrange(trestbps.plot, chol.plot, maxhr.plot, nrow=2)
 ```
 
-![](heartdisease_files/figure-gfm/bxplots-1.png)<!-- -->
+![](heartdisease_files/figure-gfm/bxplots-1.png)
 
 ``` r
 bxplots
@@ -435,7 +435,7 @@ heart.roc <- roc(response = ordered(traincomp$train.response),
 rocplot <- plot(heart.roc, print.thres = "best", main = "Receiver Operating Characteritic Technique Plot")
 ```
 
-![](heartdisease_files/figure-gfm/rocplot-1.png)<!-- -->
+![](heartdisease_files/figure-gfm/rocplot-1.png)
 
 ``` r
 rocplot
